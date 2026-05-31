@@ -13,7 +13,7 @@
 // b = 48;
 // console.log(b);
 //const
-// let c =58;
+// const c =58;
 // console.log(c);
 
 // Practice Questions
@@ -227,9 +227,9 @@
 // //9.Function to find maximum of two numbers.
 // function max(a,b){
 //     if(a<b){
-//         return console.log("b");
+//         return console.log(b);
 //     }else{
-//        return console.log("a");
+//        return console.log(a);
 //     };
 // }
 // max(10,50);
@@ -239,3 +239,56 @@
 //     return (p*r*t)/100;
 // }
 // console.log(simpleInterest(1000,5,2));
+
+//arrow function
+// let greet = () =>{
+//     console.log("hello");
+// }
+
+//1.Arrow function to print name.
+// let name = () =>{
+//     console.log("hanvitha");
+// }
+
+//2.Arrow function to add two numbers.
+// let add = (a,b) => {
+//     return a+b;
+// }
+// console.log(add(100,200));
+
+//additional questions
+//1.Find largest among 3 numbers.
+// const maxOfThree=(a,b,c)=>(a>b?(a>c?a:c):(b>c?b:c));
+// console.log(maxOfThree(100,300,50));
+
+//2.Check positive, negative, zero.
+// const posNegZer0=(a)=>{
+//     if(a===0){
+//         console.log("zero");
+//     }else if(a<0){
+//         console.log("negative");
+//     }else{
+//         console.log("positive");
+//     }
+// }
+// console.log(posNegZer0(-4));
+
+//3.Check leap year.
+// let year = 2020;
+// if(year%4==0){
+//     console.log("leap");
+// }else{
+//     console.log("non leap");
+// }
+
+//4.Find factorial.
+// let a = 4;
+// let fact =1;
+// for(let i=1;i<=a;i++){
+//     fact = fact*i;
+// }
+// console.log(fact);
+
+
+
+
