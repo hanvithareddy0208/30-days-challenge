@@ -40,7 +40,8 @@
 // console.log(total);
 
 //5.Create constants for PI and GST.
-
+// const PI = 1.65847;
+// const GST = 0.4578;
 
 //6.Store different data types in variables.
 // let age = 18;
