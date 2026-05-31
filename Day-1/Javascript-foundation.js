@@ -164,4 +164,78 @@
 // console.log(a>b?"yes":"no");
 
 //functions
+//function declaration
+// function greet(){
+//     console.log("hello");
+// }
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(100,400));
 
+//1.Function to print name.
+// function name(){
+//     console.log("hanvitha");
+// }
+
+// //2.Function to add two numbers.
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(100,200));
+
+// //3.Function to subtract numbers.
+// function sub(a,b){
+//     return a-b;
+// }
+// console.log(sub(100,200));
+
+// //4.Function to multiply numbers.
+// function mul(a,b){
+//     return a*b;
+// }
+// console.log(mul(100,200));
+
+// //5.Function to divide numbers.
+// function div(a,b){
+//     return a/b;
+// }
+// console.log(div(100,200));
+
+// //6.Function to find square.
+// function square(a){
+//     return a**2;
+// }
+// console.log(square(10));
+
+// //7.Function to find cube.
+// function cube(a){
+//     return a**3;
+// }
+// console.log(cube(10));
+
+// //8.Function to check even/odd.
+// function evenodd(a){
+//     if(a%2==0){
+//         return console.log("even");
+//     }else{
+//         return console.log("odd");
+//     }
+// }
+// evenodd(10);
+
+// //9.Function to find maximum of two numbers.
+// function max(a,b){
+//     if(a<b){
+//         return console.log("b");
+//     }else{
+//        return console.log("a");
+//     };
+// }
+// max(10,50);
+
+// //10.Function to calculate simple interest.
+// function simpleInterest(p,r,t){
+//     return (p*r*t)/100;
+// }
+// console.log(simpleInterest(1000,5,2));
