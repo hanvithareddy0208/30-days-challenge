@@ -124,3 +124,44 @@
 // }
 // console.log(student);
 // console.log(student["name"]);
+
+//3.operators
+// let a = 10;
+// let b = 20;
+// console.log("arthmetic");
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+// console.log(a/b);
+// console.log(a%b);
+// console.log("exponential");
+// console.log(a**b);
+// console.log("increment");
+// console.log(a++);
+// console.log(++a);
+// console.log("decrement");
+// console.log(--a);
+// console.log(a--);
+// console.log("assignment");
+// console.log(a+=b);
+// console.log(a-=b);
+// console.log(a*=b);
+// console.log(a/=b);
+// console.log("comparison");
+// console.log(a==b);
+// console.log(a!=b);
+// console.log(a===b);
+// console.log(a!==b);
+// console.log(a<b);
+// console.log(a<=b);
+// console.log(a>b);
+// console.log(a>=b);
+// console.log("logical");
+// console.log(a&&b);
+// console.log(a||b);
+// console.log(a!=b);
+// console.log("ternary");
+// console.log(a>b?"yes":"no");
+
+//functions
+
