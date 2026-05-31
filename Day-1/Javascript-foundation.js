@@ -41,12 +41,85 @@
 
 //5.Create constants for PI and GST.
 
+
 //6.Store different data types in variables.
+// let age = 18;
+// console.log(typeof(age));
+// let name="hanvitha";
+// console.log(typeof(name));
+// let ispass = true;
+// console.log(typeof(ispass));
+// let num = 175477879797989;
+// console.log(typeof(num));
+// let x = null;
+// console.log(typeof(x));
+// let y;
+// console.log(typeof(y));
+// let id = Symbol();
+
+
 //7.Check the type of a variable using typeof.
-let a = 19;
-console.log(typeof(a));
-let name="Hanvitha";
-console.log(typeof(name));
+// let age = 18;
+// let name="hanvitha";
+// let ispass = true;
+// let num = 175477879797989;
+// let x = null;
+// let y;
+// let id = Symbol();
+
+
 //8.Create a variable and reassign its value.
+// var a = 57;
+// var a =67;
+// console.log(a);
+
+// let b = 47;
+// let b = 57;
+// b = 47;
+
+// const c = 36;
+// c = 57;
+
 //9.Compare let and var.
+//var - reassign, re declare, function scope
+//let - re assign, block scope,
+//const - block scope
+
 //10.Create variables for student details.
+// let student ={
+//     name: "hanvitha",
+//     age: 20,
+//     ispass: true,
+//     place: "hyderabd",
+// }
+// console.log(student);
+// console.log(student["name"]);
+
+
+
+//2.Data Types
+//primitive
+// let age = 18;
+// console.log(typeof(age));
+// let name="hanvitha";
+// console.log(typeof(name));
+// let ispass = true;
+// console.log(typeof(ispass));
+// let num = 175477879797989;
+// console.log(typeof(num));
+// let x = null;
+// console.log(typeof(x));
+// let y;
+// console.log(typeof(y));
+// let id = Symbol();
+// console.log(typeof(id));
+
+//non-primitive - object
+// let student ={
+//     name: "hanvitha",
+//     age: 20,
+//     ispass: true,
+//     place: "hyderabd",
+// }
+// console.log(student);
+// console.log(student["name"]);
