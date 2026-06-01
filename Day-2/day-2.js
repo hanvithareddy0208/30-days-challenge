@@ -111,6 +111,130 @@
 // console.log(sum);
 
 // 3. Find maximum element in array
+// var arr=[38,46,68,37,99];
+// var max= arr[0];
+// for(var i=1;i<arr.length;i++){
+//     if(arr[i]>max){
+//         max=arr[i];
+//     }
+// }
+// console.log(max);
 
 // 4. Find minimum element in array
+// var arr=[38,46,68,37,99];
+// var min= arr[0];
+// for(var i=1;i<arr.length;i++){
+//     if(arr[i]<min){
+//         min=arr[i];
+//     }
+// }
+// console.log(min);
+
 // 5. Find average of array elements
+// var arr=[38,46,68,37,99];
+// var sum = 0;
+// for(var i=0;i<arr.length;i++){
+//     sum = sum+arr[i];
+// }
+// var average = sum/arr.length;
+// console.log(average);
+
+
+// Objects (6–10)
+// 6. Create a student object and print details
+// let student={
+//     name:"hanvitha",
+//     age:20,
+//     city:"bangalore"
+// };
+// console.log("Name: "+student.name);
+// console.log("Age: "+student.age);
+// console.log("City: "+student.city);
+// // 7. Add a new property to an object
+// student.country="india";
+// console.log(student);
+// // 8. Update existing property
+// student.age=21;
+// console.log(student);
+// // 9. Delete a property
+// delete student.city;
+// console.log(student);
+// // 10. Print all keys and values using for...in
+// for(let key in student){
+//     console.log(key+": "+student[key]);
+// }
+
+// 11. Print numbers from 1 to 100
+// for(let i=1;i<=100;i++){
+//     console.log(i);
+// }
+// 12. Print even numbers from 1 to 100
+// for(let i=1;i<=100;i++){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+// }
+// 13. Print odd numbers from 1 to 100
+// for(let i=1;i<=100;i++){
+//     if(i%2!=0){
+//         console.log(i);
+//     }
+// }
+// 14. Find factorial of a number
+// let num=5;
+// let factorial=1;
+// for(let i=1;i<=num;i++){
+//     factorial=factorial*i;
+// }
+// console.log(factorial);
+// 15. Print multiplication table
+// let num=5;
+// for(let i=1;i<=10;i++){
+//     console.log(num+" x "+i+" = "+(num*i));
+// }
+
+// 16. Add element using push()
+// let arr=[20,30,57,98,100];
+// arr.push(200);
+// console.log(arr);
+// 17. Remove element using pop()
+// let arr=[20,30,57,98,100];
+// arr.pop();
+// console.log(arr);
+// 18. Add element using unshift()
+// let arr=[20,30,57,98,100];
+// arr.unshift(10);
+// console.log(arr);
+// 19. Remove element using shift()
+// let arr=[20,30,57,98,100];
+// arr.shift();
+// console.log(arr);
+// 20. Use slice() and splice()
+// let arr=[20,30,57,98,100];
+// console.log(arr.slice(1,4));
+// arr.splice(2,1);
+// console.log(arr);
+
+
+//student grade manager
+// let student=[
+//     {name:"hanvitha",marks:85,},
+//     {name:"sneha",marks:92,},
+//     {name:"priya",marks:78,},
+//     {name:"arjun",marks:90,},
+//     {name:"ravi",marks:65,}
+// ]
+
+// for(student of student){
+//     let grade;
+//     if(student.marks>=90){
+//         grade="A";
+//     }
+//     else if(student.marks>=80){
+//         grade="B";
+//     }
+//     else{
+//         grade="C";
+//     }
+//     console.log(student.name+": "+grade);
+// }
