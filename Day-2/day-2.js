@@ -95,4 +95,14 @@
 // console.log(obj.hasOwnProperty("name"));
 
 //20 coding questions
+// Arrays (1–5)
+// 1. Print all elements of an array
+// let arr=[20,30,57,98,100];
+// for(let i=0;i<=arr.length;i++){
+//     console.log(arr[i]);
+// }
+// 2. Find sum of array elements
 
+// 3. Find maximum element in array
+// 4. Find minimum element in array
+// 5. Find average of array elements
