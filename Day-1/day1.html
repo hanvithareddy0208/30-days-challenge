@@ -1,86 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JavaScript Operators Demo</title>
+    <title>Nested Switch Calculator</title>
 </head>
 <body>
 
-    <h2>JavaScript Operators</h2>
+    <h2>Operators Demo</h2>
 
-    <input type="number" id="num1" placeholder="Enter First Number">
-    <input type="number" id="num2" placeholder="Enter Second Number">
+    <input type="number" id="num1" placeholder="First Number">
+    <input type="number" id="num2" placeholder="Second Number">
 
     <br><br>
 
-    <button onclick="showResults()">Check Operators</button>
+    <label>Main Operator Type:</label>
+    <select id="operator">
+        <option value="arithmetic">Arithmetic</option>
+        <option value="comparison">Comparison</option>
+        <option value="logical">Logical</option>
+        <option value="assignment">Assignment</option>
+    </select>
 
-    <h3>Output:</h3>
-    <pre id="result"></pre>
+    <br><br>
+
+    <label>Sub Operator:</label>
+    <input type="text" id="subOperator" placeholder="+, -, ==, &&, +=">
+
+    <br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h3 id="result">Result:</h3>
 
     <script>
-        function showResults() {
-            let a = Number(document.getElementById("num1").value);
-            let b = Number(document.getElementById("num2").value);
+        function calculate() {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
 
-            let output = "";
+            let operator = document.getElementById("operator").value;
+            let subOperator = document.getElementById("subOperator").value;
 
-            // Arithmetic Operators
-            output += "Arithmetic Operators\n";
-            output += `a + b = ${a + b}\n`;
-            output += `a - b = ${a - b}\n`;
-            output += `a * b = ${a * b}\n`;
-            output += `a / b = ${a / b}\n`;
-            output += `a % b = ${a % b}\n\n`;
+            let result;
 
-            // Comparison Operators
-            output += "Comparison Operators\n";
-            output += `a == b : ${a == b}\n`;
-            output += `a === b : ${a === b}\n`;
-            output += `a != b : ${a != b}\n`;
-            output += `a !== b : ${a !== b}\n`;
-            output += `a > b : ${a > b}\n`;
-            output += `a < b : ${a < b}\n`;
-            output += `a >= b : ${a >= b}\n`;
-            output += `a <= b : ${a <= b}\n\n`;
+            switch (operator) {
 
-            // Logical Operators
-            output += "Logical Operators\n";
-            output += `(a > 0 && b > 0) : ${a > 0 && b > 0}\n`;
-            output += `(a > 0 || b > 0) : ${a > 0 || b > 0}\n`;
-            output += `!(a > 0) : ${!(a > 0)}\n\n`;
+                case "arithmetic":
+                    switch (subOperator) {
+                        case "+":
+                            result = num1 + num2;
+                            break;
+                        case "-":
+                            result = num1 - num2;
+                            break;
+                        case "*":
+                            result = num1 * num2;
+                            break;
+                        case "/":
+                            result = num1 / num2;
+                            break;
+                        case "%":
+                            result = num1 % num2;
+                            break;
+                        default:
+                            result = "Invalid Arithmetic Operator";
+                    }
+                    break;
 
-            // Assignment Operators
-            let x = a;
+                case "comparison":
+                    switch (subOperator) {
+                        case "==":
+                            result = num1 == num2;
+                            break;
+                        case "===":
+                            result = num1 === num2;
+                            break;
+                        case "!=":
+                            result = num1 != num2;
+                            break;
+                        case ">":
+                            result = num1 > num2;
+                            break;
+                        case "<":
+                            result = num1 < num2;
+                            break;
+                        case ">=":
+                            result = num1 >= num2;
+                            break;
+                        case "<=":
+                            result = num1 <= num2;
+                            break;
+                        default:
+                            result = "Invalid Comparison Operator";
+                    }
+                    break;
 
-            output += "Assignment Operators\n";
-            output += `x = a → ${x}\n`;
+                case "logical":
+                    switch (subOperator) {
+                        case "&&":
+                            result = (num1 > 0 && num2 > 0);
+                            break;
+                        case "||":
+                            result = (num1 > 0 || num2 > 0);
+                            break;
+                        case "!":
+                            result = !(num1 > 0);
+                            break;
+                        default:
+                            result = "Invalid Logical Operator";
+                    }
+                    break;
 
-            x += b;
-            output += `x += b → ${x}\n`;
+                case "assignment":
+                    switch (subOperator) {
+                        case "=":
+                            num1 = num2;
+                            result = num1;
+                            break;
+                        case "+=":
+                            num1 += num2;
+                            result = num1;
+                            break;
+                        case "-=":
+                            num1 -= num2;
+                            result = num1;
+                            break;
+                        case "*=":
+                            num1 *= num2;
+                            result = num1;
+                            break;
+                        case "/=":
+                            num1 /= num2;
+                            result = num1;
+                            break;
+                        default:
+                            result = "Invalid Assignment Operator";
+                    }
+                    break;
 
-            x = a;
-            x -= b;
-            output += `x -= b → ${x}\n`;
+                default:
+                    result = "Invalid Operator Type";
+            }
 
-            x = a;
-            x *= b;
-            output += `x *= b → ${x}\n`;
-
-            x = a;
-            x /= b;
-            output += `x /= b → ${x}\n`;
-
-            x = a;
-            x %= b;
-            output += `x %= b → ${x}\n\n`;
-
-            // Ternary Operator
-            output += "Ternary Operator\n";
-            output += `${a > b ? "a is greater" : "b is greater or equal"}\n`;
-
-            document.getElementById("result").textContent = output;
+            document.getElementById("result").innerText =
+                "Result: " + result;
         }
     </script>
     <script src="Javascript-foundation.js"></script>
+
 </body>
 </html>
