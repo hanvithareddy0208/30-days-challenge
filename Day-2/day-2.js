@@ -101,8 +101,16 @@
 // for(let i=0;i<=arr.length;i++){
 //     console.log(arr[i]);
 // }
+
 // 2. Find sum of array elements
+// var arr=[38,46,68,37,99];
+// var sum = 0;
+// for(var i=0;i<arr.length;i++){
+//     sum = sum+arr[i];
+// }
+// console.log(sum);
 
 // 3. Find maximum element in array
+
 // 4. Find minimum element in array
 // 5. Find average of array elements
